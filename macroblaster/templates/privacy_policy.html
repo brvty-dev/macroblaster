@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block title %}
+   | Privacy Policy
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/privacy_policy">
+   <meta property="og:description" content="A free online tool to calculate your daily macronutrient intake.">
+{% endblock %}
+
+{% block content %}
+
+<article>
+    <h3>
+      Privacy Policy
+   </h3>
+      <p>
+         This Privacy Policy describes the way we handle any personal data that you provide to us. In accordance with the Data Protection Act 1998, 
+         the data controller is <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span>.
+            <br>
+            <br>
+         It should be viewed in conjunction with our 
+         <a href="{{ url_for('main.user_agreement') }}">User Agreement</a>.
+            <br>
+            <br>
+         We may collect and process the following data about you:
+      </p>
+         <ul>
+            <li>
+               If you contact us requesting further material or services, we may keep a record of correspondence
+            </li>
+         </ul>
+      <p>
+         We cannot guarantee the security of data you transmit through the Site but we use procedures to prevent unauthorised access to information 
+         once it's received.
+            <br>
+            <br>
+         We may use information you provide us to supply information and updates about our activities, products or services.
+            <br>
+            <br>
+         As per our terms, any unsolicited material received either electronically or through traditional mail services will be disposed of unread.
+            <br>
+            <br>
+         We may disclose your personal information to third parties:
+      </p>
+         <ul>
+            <li>
+               If <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span> is acquired by a third party, as it will be considered an asset
+            </li>
+            <li>
+               If we are obliged to do so in order to comply with a legal obligation, or to protect the rights, property, 
+               or safety of <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span>. This includes fraud protection
+            </li>
+         </ul>
+      <p>
+         We do not process your personal data for marketing purposes.
+            <br>
+            <br>
+         The Act gives you the right to access information held about you.
+            <br>
+            <br>
+         Any questions or requests regarding your data should be sent via 
+         <a href="mailto:admin@macroblaster.online">email</a>, and marked with the subject "Privacy".
+      </p>
+         <h4 id="cookies">
+            COOKIES
+         </h4>
+            <p>
+               Upon first visit, cookies are used to set your preferences whilst using the site.
+            </p>
+            <p>
+               Cookies are stored in your Internet browser settings for one year from date of selection unless cleared from the browser history.
+            </p>
+            <p>
+               Neither preference stores any personal data beyond that relating to your preference.
+            </p>
+         <h4>
+            Essential Cookies
+         </h4>
+            <p>
+               Essential cookies allow your preferences to be stored for future visits.
+            </p>
+         <h4>
+            Additional Cookies
+         </h4>
+            <p>
+               Additional cookies allow us to provide features which will offer more efficient UX to visitors of the site.
+            </p>
+            <p>
+               <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span> reserves the right to add, remove or amend these additional features at any time without prior notice.
+            </p>
+               <h4 id="update">
+                  Updating Preferences
+               </h4>
+                  <p>
+                     Visitors can update their preference here at anytime:
+                  </p>
+                     <div class="update-preferences">
+                        <form class="preferences" action="{{ url_for('cooks.update_cookie_preference') }}" method="POST">
+                           <input type="hidden" name="csrf_token" value="{{ session['_csrf_token'] }}">
+                              <p>
+                                 Essential Cookies:
+                              </p>
+                                 <label for="cookie_preference" class="switch" aria-label="Enable cookie preferences">
+                                 <input id="cookie_preference" aria-label="Enable cookie preferences" type="checkbox" name="cookie_preference" {% if cookie_accepted %}checked{% endif %}>
+                                 <span class="slider round"></span>
+                                 </label>
+                              <p>
+                                 :Additional Cookies
+                              </p>
+                                 <br>
+                                    <button class="save" type="submit">
+                                       Save
+                                    </button>
+                        </form>
+                     </div>
+         <h4>
+            DEFINITIONS
+         </h4>
+            <p>
+               Except to the extent expressly provided otherwise, in this Agreement:
+                  <br>
+                  <br>
+               "<b>Website</b>" or "<b>Site</b>" means the domain www.market-win.co.uk and all its pages.
+                  <br>
+                  <br>
+               "<b>Us</b>" or "<b>We</b>" means owners of the website <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span>.
+                  <br>
+                  <br>
+               "<b>You</b>" means visitors to the domain www.market-win.co.uk and all its pages.
+                  <br>
+                  <br>
+               "<b>the Act</b>" means the Data Protection Act 1998.
+            </p>
+</article>
+
+{% endblock %}

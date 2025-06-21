@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}
+   | Health and wellness guides
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/guides">
+   <meta property="og:description" content="macroBLASTER's health and wellness guides.">
+{% endblock %}
+
+{% block content %}
+
+<button id="shareGuides" aria-label="Share page information">
+    <i class="fas fa-share-alt"></i>
+    Share
+</button>
+    <br>
+    <br>
+        <article>
+            <!-- What Are Macros -->
+            {% if variant_macros == 'A' %}
+                <h2>Use these 7 simple macronutrient facts to get a healthy diet</h2>
+            {% else %}
+                <h2>Master Your Macros: Fueling Fat Loss and Muscle Growth</h2>
+            {% endif %}
+                <p>
+                    Macros, short for macronutrients, are the essential nutrients that provide the body with energy and are 
+                    required for proper functioning. The three primary macronutrients are:
+                </p>
+                <a class="blog_link" href="{{ url_for('main.what_are_macros') }}"" aria-label="A link to macroBLASTER's introductory guide to macros">Read more about macros</a>
+        </article>
+            <hr class="blog_div">
+        <article>
+            <!-- Warming Up -->
+            {% if variant_warm == 'A' %}
+                <h2>Stretch Your Limits: Dynamic Warmups That Actually Work</h2>
+            {% else %}
+                <h2>Warming Up</h2>
+            {% endif %}
+                <p>
+                    Macros, short for macronutrients, are the essential nutrients that provide the body with energy and are 
+                    required for proper functioning. The three primary macronutrients are:
+                </p>
+                    <a class="blog_link" href="{{ url_for('main.warming_up') }}" aria-label="A link to macroBLASTER's introductory guide to warming up">Read more about warming up</a>
+        </article>
+            <hr class="blog_div">
+        <article>
+            <!-- Aerobic Exercise -->
+            {% if variant_aerobics == 'A' %}
+                <h2>Use these 7 simple macronutrient facts to get a healthy diet</h2>
+            {% else %}
+                <h2>Aerobic Exercise</h2>
+            {% endif %}
+                <p>
+                    Macros, short for macronutrients, are the essential nutrients that provide the body with energy and are 
+                    required for proper functioning. The three primary macronutrients are:
+                </p>
+                    <a class="blog_link" href="{{ url_for('main.aerobic_exercise') }}" aria-label="A link to macroBLASTER's introductory guide to aerobic exercise">Read more about aerobic exercise</a>
+        </article>
+            <hr class="blog_div">
+        <article>
+            <!-- Resistance Training -->
+            {% if variant_resistance == 'A' %}
+                <h2>Use these 7 simple macronutrient facts to get a healthy diet</h2>
+            {% else %}
+                <h2>Resistance (Strength) Training</h2>
+            {% endif %}
+                <p>
+                    Macros, short for macronutrients, are the essential nutrients that provide the body with energy and are 
+                    required for proper functioning. The three primary macronutrients are:
+                </p>
+                    <a class="blog_link" href="{{ url_for('main.resistance_training') }}" aria-label="A link to macroBLASTER's introductory guide to resistance training">Read more about resistance training</a>
+        </article>
+            <hr class="blog_div">
+        <article>
+            <!-- Injury Recovery -->
+            {% if variant_injury == 'A' %}
+                <h2>Use these 7 simple macronutrient facts to get a healthy diet</h2>
+            {% else %}
+                <h2>Injury Recovery</h2>
+            {% endif %}
+                <p>
+                    Macros, short for macronutrients, are the essential nutrients that provide the body with energy and are 
+                    required for proper functioning. The three primary macronutrients are:
+                </p>
+                    <a class="blog_link" href="{{ url_for('main.injury_recovery') }}" aria-label="A link to macroBLASTER's introductory guide to injury recovery">Read more about injury recovery</a>
+        </article>
+
+{% endblock %}

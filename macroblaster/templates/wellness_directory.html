@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}
+   | Wellness Directory
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/wellness_directory">
+   <meta property="og:description" content="macroBLASTER's free online wellness directory.">
+{% endblock %}
+
+{% block content %}
+
+<article>
+   <button class="share_button" id="shareDirectory" aria-label="Share page information">
+      <i class="fas fa-share-alt"></i>
+      Share
+   </button>
+      <br>
+      <br>
+         <h2>
+            Wellness Directory
+         </h2>
+            <p>
+               Here you can find professional organisations in the field of health and wellbeing.
+            </p>
+            <p>
+               If you would like your organisation included free of charge, please contact 
+               <a href="mailto:admin@macroblaster.online">admin</a>, 
+               marked with the subject "Directory".
+            </p>
+               <ul class="countries">
+                  {% set seen = namespace(countries=[]) %}
+                  {% for record in records | sort(attribute="country") %}
+                     {% if record.country not in seen.countries %}
+                        {% set _ = seen.countries.append(record.country) %}
+                        <li>
+                           <a href="{{ url_for('main.wellness_directory_country', country_name=record.country) }}" aria-label="A link to wellness directory for {{ record.country }}">
+                                 {{ record.country }}
+                           </a>
+                        </li>
+                     {% endif %}
+                  {% endfor %}
+               </ul>
+</article>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}
+   | Wellness Directory
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/wellness_directory">
+   <meta property="og:description" content="macroBLASTER's free online wellness directory.">
+{% endblock %}
+
+{% block content %}
+
+<article>
+    <a href="{{ url_for('main.wellness_directory') }}" aria-label="A link to macroBLASTER's wellness directory">
+        &laquo; Back
+    </a>
+    <button class="share_button" id="shareDirectory{{ country | replace(' ', '-') | lower }}" aria-label="Share page information">
+        <i class="fas fa-share-alt"></i>
+        Share
+    </button>
+      <br>
+      <br>
+         <h2>
+            Wellness Directory for {{ country }}
+         </h2>
+
+            {% for category, items in records | sort(attribute="category") | groupby("category") %}
+               <h4 id="{{ category | replace(' ', '-') | lower }}">{{ category }}</h4>
+                  <ul class="countries">
+                     {% for item in items | sort(attribute="organisation") %}
+                        <li>
+                           <a href="{{ item.website }}" target="_blank" aria-label="A link to {{ item.organisation }}">
+                                 {{ item.organisation }}
+                           </a>
+                           <br>
+                           {{ item.summary }}
+                        </li>
+                     {% endfor %}
+                  </ul>
+            {% endfor %}
+        
+            <p>
+                <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span> is not affiliated 
+                with any of the above organisations. Inclusion does not constitute a recomendation. Details are provided for information purposes only.
+            </p>
+</article>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}
+   | Dashboard
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/">
+   <meta property="og:description" content="A free online tool to calculate your daily macronutrient intake.">
+   <meta name="robots" content="noindex, nofollow">
+{% endblock %}
+
+{% block content %}
+
+<h2>Dashboard</h2>
+
+<form method="POST">
+  <label class="password_label" for="password">
+    Password
+  </label>
+    <br>
+      <input type="password" name="password" placeholder="Password required.." required>
+          {% if error %}
+            <p class="error">
+              {{ error }}
+            </p>
+          {% else %}
+            <p>
+              &nbsp;
+            </p>
+          {% endif %}
+            <input class="login" type="submit" value="Login">
+</form>
+
+{% endblock %}

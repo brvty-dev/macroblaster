@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% block title %}
+   | A free introductory guide to resistance (strength) training
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/resistance_training">
+   <meta property="og:description" content="macroBLASTER's free introductory guide to resistance_training.">
+{% endblock %}
+
+{% block content %}
+
+<article>
+   <button class="share_button" data-page="resistance" id="shareResistance" aria-label="Share page information">
+      <i class="fas fa-share-alt"></i>
+      Share
+   </button>
+      <br>
+      <br>
+      {% if variant == 'A' %}
+         <h2>
+            Use these 7 simple macronutrient facts to get a healthy diet
+         </h2> 
+      {% else %}
+         <h2>
+            Resistance (Strength) Training
+         </h2>
+      {% endif %}
+            <p>
+               Resistance training involves working your muscles against 
+               an opposing force to build strength, muscle mass, and endurance. 
+               It can be done using various equipment or just your body weight. 
+               Here's a quick guide:
+            </p>
+            <ol class="guide">
+               <li>
+                  <b>
+                     Set Clear Goals:
+                  </b> 
+                     Determine your goals, whether it's building muscle, increasing strength, 
+                     or improving overall fitness. Your goals will guide your training plan.
+               </li>
+               <li>
+                  <b>
+                     Choose Your Exercises:
+                  </b> 
+                     Select a variety of resistance exercises that target different muscle groups. 
+                     Common exercises include:
+               </li>
+                  <ul>
+                     <li>
+                        Bodyweight exercises (e.g., push-ups, squats, planks)
+                     </li>
+                     <li>
+                        Free weights (e.g., dumbbells, barbells)
+                     </li>
+                     <li>
+                        Resistance bands
+                     </li>
+                     <li>
+                        Weight machines at the gym
+                     </li>
+                  </ul>
+               <li>
+                  <b>
+                     Form and Technique:
+                  </b> 
+                     Proper form is crucial to prevent injury and maximize results. 
+                     If you're unsure, consider working with a certified fitness trainer to learn proper techniques.
+               </li>
+               <li>
+                  <b>
+                     Start with Warm-Up:
+                  </b> 
+                     <a href="{{ url_for('main.warming_up') }}" aria-label="A link to macroBLASTER's Warming Up page">Warm up</a> with 5-10 minutes of light aerobic activity (e.g., brisk walking or cycling) 
+                     to increase blood flow to your muscles.
+               </li>
+               <li>
+                  <b>
+                     Progressive Overload:
+                  </b> 
+                     Gradually increase the resistance (weight or intensity) over time. This challenges your 
+                     muscles to adapt and grow stronger.
+               </li>
+               <li>
+                  <b>
+                     Frequency:
+                  </b> 
+                     Aim to train each major muscle group 2-3 times a week with at least 48 hours of rest between 
+                     sessions for recovery.
+               </li>
+               <li>
+                  <b>
+                     Sets and Repetitions:
+                  </b> 
+                     Typically, beginners start with 1-3 sets of 8-12 repetitions (reps) for each exercise. 
+                     As you advance, you can vary the sets and reps for different goals (e.g., strength vs. endurance).
+               </li>
+               <li>
+                  <b>
+                     Rest Between Sets:
+                  </b> 
+                     Allow 1-2 minutes of rest between sets to recover.
+               </li>
+               <li>
+                  <b>
+                     Nutrition:
+                  </b> 
+                     Proper nutrition, including adequate protein intake, is important to support muscle growth and recovery.
+               </li>
+               <li>
+                  <b>
+                     Safety:
+                  </b> 
+                     Use proper safety precautions, including proper footwear, and have a spotter for heavy lifts when necessary.
+               </li>
+               <li>
+                  <b>
+                     Cool Down:
+                  </b> 
+                     After your resistance workout, perform static stretches for the muscle groups you worked to improve 
+                     flexibility and reduce muscle soreness.
+               </li>
+               <li>
+                  <b>
+                     Recovery:
+                  </b> 
+                     Ensure you get enough sleep and allow your muscles to recover between workouts.
+               </li>
+               <li>
+                  <b>
+                     Track Your Progress:
+                  </b> 
+                     Keep a workout journal to record your exercises, sets, reps, and the amount of weight lifted. 
+                     Tracking progress can help you stay motivated.
+               </li>
+               <li>
+                  <b>
+                     Consult a Professional:
+                  </b> 
+                     If you're new to resistance training or have specific fitness goals, consider consulting with 
+                     a fitness professional to create a personalized training plan. You can find a 
+                     <a href="{{ url_for('main.wellness_directory') }}" aria-label="A link to macroBLASTER's wellness directory">PT</a> here.
+               </li>
+            </ol>
+            <p class="important">
+               ** Consistency, proper technique, and gradual progression are essential for effective 
+               resistance training. Always listen to your body, and if you experience pain or discomfort, seek 
+               guidance from a healthcare provider or fitness expert **
+            </p>
+</article>
+
+{% endblock %}

@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block title %}
+   | A free introductory guide to sports injury rehabilitation
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/injury_recovery">
+   <meta property="og:description" content="macroBLASTER's free introductory guide to injury recovery.">
+{% endblock %}
+
+{% block content %}
+
+<article>
+   <button class="share_button" data-page="injury" id="shareInjury" aria-label="Share page information">
+      <i class="fas fa-share-alt"></i>
+      Share
+   </button>
+      <br>
+      <br>
+      {% if variant == 'A' %}
+         <h2>
+            Use these 7 simple macronutrient facts to get a healthy diet
+         </h2> 
+      {% else %}
+         <h2>
+            Injury Recovery
+         </h2>
+      {% endif %}
+            <p>
+               Recovering from a sports injury can be a challenging and sometimes lengthy process, 
+               but with proper care and attention, you can improve your chances of a successful recovery. 
+               Here are some general steps and considerations for recovering from an injury:
+            </p>
+               <ol class="guide">
+                  <li>
+                     <b>
+                        Seek Medical Attention:
+                     </b> 
+                        If you've sustained a significant injury, it's essential to consult with a healthcare professional 
+                        for an accurate diagnosis and treatment plan. Follow your healthcare provider's recommendations and instructions closely.
+                  </li>
+                  <li>
+                     <b>
+                        Rest:
+                     </b> 
+                        Depending on the severity of your injury, you may need to rest the affected area to allow it to heal. 
+                        Rest is crucial for recovery.
+                  </li>
+                  <li>
+                     <b>
+                        Pain Management:
+                     </b> 
+                        If you're experiencing pain, follow your healthcare provider's advice for pain management, 
+                        which may include over-the-counter or prescription medications.
+                  </li>
+                  <li>
+                     <b>
+                        Physical Therapy:
+                     </b> 
+                        Physical therapy can be instrumental in the recovery process. A physical therapist can provide 
+                        exercises and techniques to help you regain strength, flexibility, and function.
+                  </li>
+                  <li>
+                     <b>
+                        Rehabilitation Exercises:
+                     </b> 
+                        If recommended by your healthcare provider or physical therapist, perform rehabilitation exercises regularly. 
+                        These exercises are designed to improve your range of motion and strengthen the injured area.
+                  </li>
+                  <li>
+                     <b>
+                        Proper Nutrition:
+                     </b> 
+                        Eating a balanced diet with sufficient nutrients can aid the healing process. 
+                        Ensure you're getting adequate protein, vitamins, and minerals.
+                  </li>
+                  <li>
+                     <b>
+                        Stay Hydrated:
+                     </b> 
+                        Drink plenty of water to help with tissue repair and overall recovery.
+                  </li>
+                  <li>
+                     <b>
+                        Restorative Sleep:
+                     </b> 
+                        Quality sleep is essential for healing. Aim for 7-9 hours of uninterrupted sleep each night.
+                  </li>
+                  <li>
+                     <b>
+                        Gradual Return to Activity:
+                     </b> 
+                        If you've been inactive due to your injury, gradually reintroduce physical activity as 
+                        directed by your healthcare provider or physical therapist.
+                  </li>
+                  <li>
+                     <b>
+                        Mental Health:
+                     </b> 
+                        Coping with an injury can be mentally challenging. Consider seeking support from a mental health professional 
+                        if you're experiencing emotional distress during your recovery.
+                  </li>
+                  <li>
+                     <b>
+                        Patience and Positive Attitude:
+                     </b> 
+                        Understand that recovery can take time. Stay patient, maintain a positive attitude, and focus on your progress.
+                  </li>
+                  <li>
+                     <b>
+                        Follow-Up Care:
+                     </b> 
+                        Attend all follow-up appointments with your healthcare provider or therapist to monitor your progress and make any 
+                        necessary adjustments to your treatment plan.
+                  </li>
+                  <li>
+                     <b>
+                        Prevent Recurrence:
+                     </b>
+                        Once you've recovered, take steps to prevent a recurrence of the injury. This may involve specific <a href="{{ url_for('main.warming_up') }}" aria-label="A link to macroBLASTER's Warming Up page">warm ups</a>, strengthening exercises, 
+                        improving flexibility, or modifying your activities.
+                  </li>
+                  <li>
+                     <b>
+                        Listen to Your Body:
+                     </b> 
+                        Pay attention to how your body feels throughout the recovery process. If you experience pain or discomfort, 
+                        communicate it to your healthcare provider.
+                  </li>
+               </ol>
+                  <p class="important">
+                     ** The specific steps for recovery can vary depending on the type and severity of the injury. Always consult with a 
+                     <a href="{{ url_for('main.wellness_directory') }}" aria-label="A link to macroBLASTER's wellness directory">physiotherapist</a>
+                     for personalized guidance. Additionally, adhering to your treatment plan and maintaining a positive mindset can 
+                     play a significant role in your successful recovery **
+                  </p>
+</article>
+
+{% endblock %}

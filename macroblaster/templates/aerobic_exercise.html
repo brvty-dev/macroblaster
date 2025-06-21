@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% block title %}
+   | A free introductory guide to aerobic exercise
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/aerobic_exercise">
+   <meta property="og:description" content="macroBLASTER's free introductory guide to aerobic exercise.">
+{% endblock %}
+
+{% block content %}
+
+<article>
+   <button class="share_button" data-page="aerobics" id="shareAerobics" aria-label="Share page information">
+      <i class="fas fa-share-alt"></i>
+      Share
+   </button>
+      <br>
+      <br>
+      {% if variant == 'A' %}
+         <h2>
+            Use these 7 simple macronutrient facts to get a healthy diet
+         </h2> 
+      {% else %}
+         <h2>
+            Aerobic Exercise
+         </h2>
+      {% endif %}
+            <p>
+               Often referred to as cardio or cardiovascular exercise, 
+               aerobic exercise is a type of physical activity that increases 
+               your heart rate and breathing while engaging large muscle groups. 
+               It offers numerous health benefits, including improved cardiovascular 
+               health, increased lung capacity, weight management, and enhanced 
+               overall fitness. Common types of activity are:
+            </p>
+               <ul>
+                  <li>
+                     Running
+                  </li>
+                  <li>
+                     Cycling
+                  </li>
+                  <li>
+                     Swimming
+                  </li>
+                  <li>
+                     Rowing
+                  </li>
+                  <li>
+                     Skipping
+                  </li>
+               </ul>
+            <ol class="guide">
+               <li>
+               <b>
+                  Warm Up:
+               </b> 
+               Before you start your main aerobic exercise, <a href="{{ url_for('main.warming_up') }}" aria-label="A link to macroBLASTER's Warming Up page">warm up</a> your body with 
+               5-10 minutes of light, low-intensity movements. This prepares your 
+               muscles and reduces the risk of <a href="{{ url_for('main.injury_recovery') }}" aria-label="A link to macroBLASTER's Recovering From Injury page">injury</a>.
+               </li>
+               <li>
+                  <b>
+                     Duration:
+                  </b> 
+                     Aim for at least 150 minutes of moderate-intensity aerobic exercise 
+                     or 75 minutes of vigorous-intensity aerobic exercise per week. You 
+                     can break this into smaller sessions throughout the week.
+               </li>
+               <li>
+                  <b>
+                     Intensity:
+                  </b> 
+                     The intensity of your aerobic exercise should make your heart rate 
+                     increase and make you breathe harder. You should be able to talk, 
+                     but it should be somewhat challenging.
+               </li>
+               <li>
+                  <b>
+                     Progression:
+                  </b> 
+                     Gradually increase the duration and intensity of your workouts as your 
+                     fitness level improves. This will help you continue to challenge your body.
+               </li>
+               <li>
+                  <b>
+                     Cool Down:
+                  </b> 
+                     After your aerobic exercise, cool down with 5-10 minutes of low-intensity 
+                     movements and stretching. This helps reduce muscle soreness and promotes flexibility.
+               </li>
+               <li>
+                  <b>
+                     Frequency:
+                  </b> 
+                     Aim for at least 3-5 sessions of aerobic exercise per week to experience significant health benefits.
+               </li>
+               <li>
+                  <b>
+                     Safety:
+                  </b> 
+                     Stay hydrated during exercise, wear appropriate clothing and footwear, 
+                     and consider your surroundings for safety when exercising outdoors.
+               </li>
+               <li>
+                  <b>
+                     Variety: 
+                  </b>
+                     Incorporate a variety of aerobic activities to prevent boredom and work different muscle groups.
+               </li>
+               <li>
+                  <b>
+                     Listen to Your Body:
+                  </b> 
+                     Pay attention to how your body feels during exercise. If you experience pain, 
+                     dizziness, or discomfort, stop and seek medical advice if necessary.
+               </li>
+            </ol>
+            <p class="important">
+               ** Consistency is key to reaping the full benefits of aerobic exercise. 
+               It's also essential to consult with a healthcare provider, especially 
+               if you have any pre-existing medical conditions or are new to exercise, 
+               to ensure your exercise routine is safe and suitable for your individual needs **
+            </p>
+</article>
+
+{% endblock %}

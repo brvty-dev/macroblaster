@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}
+   | FAQs
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/faqs">
+   <meta property="og:description" content="A free online tool to calculate your daily macronutrient intake.">
+{% endblock %}
+
+{% block content %}
+
+<article>
+   <h3>
+      Frequently Asked Questions
+   </h3>
+      <section>
+         <h4>
+            Find answers to the most common questions here.
+         </h4>
+            <details>
+               <summary>
+                  What is <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span>?
+               </summary>
+                  <p>
+                     It's a free online tool that allows you to calculate a healthy, 
+                     daily, macronutrient balance based on your personal attributes 
+                     and the highly-regarded Harris-Benedict formula.
+                  </p>
+            </details>
+            <details>
+               <summary>
+                  Is <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span> affiliated with the companies I can find through the website?
+               </summary>
+                  <p>
+                     No, we are 100% independent. We see ourselves as a tool to encourage 
+                     others to seek a more active, healthy lifestyle. All our links are provided 
+                     impartially, it is up to the user to make their selections based on their own 
+                     assessment of the available information.
+                  </p>
+            </details>
+            <details>
+               <summary>
+                  Can I work for <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span>?
+               </summary>
+                  <p>
+                     Check out our 
+                        <a href="{{ url_for('main.jobs_board') }}">
+                              jobs board
+                        </a> 
+                     for all the latest opportunities.
+                  </p>
+            </details>
+            <details>
+               <summary>
+                  Why can't I subscribe?
+               </summary>
+                  <p>
+                     We're working on it! Soon, you will be able to login to track 
+                     your progress and access a host of cool features.
+                  </p>
+            </details>
+      </section>
+</article>
+
+{% endblock %}

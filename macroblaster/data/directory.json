@@ -1,0 +1,123 @@
+[
+    {
+        "organisation": "Association for Nutrition",
+        "website": "https://www.associationfornutrition.org/",
+        "summary": "We are the independent regulator for Registered Nutritionists.",
+        "category": "Nutrition",
+        "country": "United Kingdom"
+    },
+    {
+        "organisation": "Chartered Society of Physiotherapy",
+        "website": "https://www.csp.org.uk",
+        "summary": "The Chartered Society of Physiotherapy (CSP) is the professional, educational and trade union body for the UK's 65,000 chartered physiotherapists, physiotherapy students and support workers.",
+        "category": "Physiotherapy",
+        "country": "United Kingdom"
+    },
+    {
+        "organisation": "National Register of Personal Trainers",
+        "website": "https://nrpt.co.uk",
+        "summary": "Since 1999, the National Reigster of Personal Trainers (NRPT.co.uk) has been the 'go to' place as THE online directory. We have over 800 Qualified and Insured trainers nationwide. Our experienced personal trainer members work in gyms, PT studios, homes or local parks right across the country.",
+        "category": "Personal Training",
+        "country": "United Kingdom"
+    },    {
+        "organisation": "Association for US Nutrition",
+        "website": "https://www.associationfornutrition.org/",
+        "summary": "We are the independent regulator for Registered Nutritionists.",
+        "category": "Nutrition",
+        "country": "United States"
+    },
+    {
+        "organisation": "Chartered Society of US Physiotherapy",
+        "website": "https://www.csp.org.uk",
+        "summary": "The Chartered Society of Physiotherapy (CSP) is the professional, educational and trade union body for the UK's 65,000 chartered physiotherapists, physiotherapy students and support workers.",
+        "category": "Physiotherapy",
+        "country": "United States"
+    },
+    {
+        "organisation": "US Register of Personal Trainers",
+        "website": "https://nrpt.co.uk",
+        "summary": "Since 1999, the National Reigster of Personal Trainers (NRPT.co.uk) has been the 'go to' place as THE online directory. We have over 800 Qualified and Insured trainers nationwide. Our experienced personal trainer members work in gyms, PT studios, homes or local parks right across the country.",
+        "category": "Personal Training",
+        "country": "United States"
+    },    {
+        "organisation": "NZ Association for Nutrition",
+        "website": "https://www.associationfornutrition.org/",
+        "summary": "We are the independent regulator for Registered Nutritionists.",
+        "category": "Nutrition",
+        "country": "New Zealand"
+    },
+    {
+        "organisation": "Chartered Society NZ Physiotherapy",
+        "website": "https://www.csp.org.uk",
+        "summary": "The Chartered Society of Physiotherapy (CSP) is the professional, educational and trade union body for the UK's 65,000 chartered physiotherapists, physiotherapy students and support workers.",
+        "category": "Physiotherapy",
+        "country": "New Zealand"
+    },
+    {
+        "organisation": "NZ Register of Personal Trainers",
+        "website": "https://nrpt.co.uk",
+        "summary": "Since 1999, the National Reigster of Personal Trainers (NRPT.co.uk) has been the 'go to' place as THE online directory. We have over 800 Qualified and Insured trainers nationwide. Our experienced personal trainer members work in gyms, PT studios, homes or local parks right across the country.",
+        "category": "Personal Training",
+        "country": "New Zealand"
+    },    {
+        "organisation": "AU Association for Nutrition",
+        "website": "https://www.associationfornutrition.org/",
+        "summary": "We are the independent regulator for Registered Nutritionists.",
+        "category": "Nutrition",
+        "country": "Australia"
+    },
+    {
+        "organisation": "AU Chartered Society Physiotherapy",
+        "website": "https://www.csp.org.uk",
+        "summary": "The Chartered Society of Physiotherapy (CSP) is the professional, educational and trade union body for the UK's 65,000 chartered physiotherapists, physiotherapy students and support workers.",
+        "category": "Physiotherapy",
+        "country": "Australia"
+    },
+    {
+        "organisation": "AU Register of Personal Trainers",
+        "website": "https://nrpt.co.uk",
+        "summary": "Since 1999, the National Reigster of Personal Trainers (NRPT.co.uk) has been the 'go to' place as THE online directory. We have over 800 Qualified and Insured trainers nationwide. Our experienced personal trainer members work in gyms, PT studios, homes or local parks right across the country.",
+        "category": "Personal Training",
+        "country": "Australia"
+    },    {
+        "organisation": "CA Association for Nutrition",
+        "website": "https://www.associationfornutrition.org/",
+        "summary": "We are the independent regulator for Registered Nutritionists.",
+        "category": "Nutrition",
+        "country": "Canada"
+    },
+    {
+        "organisation": "CA Chartered Society Physiotherapy",
+        "website": "https://www.csp.org.uk",
+        "summary": "The Chartered Society of Physiotherapy (CSP) is the professional, educational and trade union body for the UK's 65,000 chartered physiotherapists, physiotherapy students and support workers.",
+        "category": "Physiotherapy",
+        "country": "Canada"
+    },
+    {
+        "organisation": "CA National Register of Personal Trainers",
+        "website": "https://nrpt.co.uk",
+        "summary": "Since 1999, the National Reigster of Personal Trainers (NRPT.co.uk) has been the 'go to' place as THE online directory. We have over 800 Qualified and Insured trainers nationwide. Our experienced personal trainer members work in gyms, PT studios, homes or local parks right across the country.",
+        "category": "Personal Training",
+        "country": "Canada"
+    },    {
+        "organisation": "Association for SA Nutrition",
+        "website": "https://www.associationfornutrition.org/",
+        "summary": "We are the independent regulator for Registered Nutritionists.",
+        "category": "Nutrition",
+        "country": "South Africa"
+    },
+    {
+        "organisation": "SA Chartered Society Physiotherapy",
+        "website": "https://www.csp.org.uk",
+        "summary": "The Chartered Society of Physiotherapy (CSP) is the professional, educational and trade union body for the UK's 65,000 chartered physiotherapists, physiotherapy students and support workers.",
+        "category": "Physiotherapy",
+        "country": "South Africa"
+    },
+    {
+        "organisation": "National Register of SA Personal Trainers",
+        "website": "https://nrpt.co.uk",
+        "summary": "Since 1999, the National Reigster of Personal Trainers (NRPT.co.uk) has been the 'go to' place as THE online directory. We have over 800 Qualified and Insured trainers nationwide. Our experienced personal trainer members work in gyms, PT studios, homes or local parks right across the country.",
+        "category": "Personal Training",
+        "country": "South Africa"
+    }
+]

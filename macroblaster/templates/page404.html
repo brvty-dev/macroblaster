@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}
+   | OOPS ... The page you were looking for doesn't exist
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online">
+   <meta property="og:description" content="A free online tool to calculate your daily macronutrient intake.">
+{% endblock %}
+
+{% block content %}
+
+<main>
+  <p>
+    OOPS ...
+  </p>
+  <p>
+    The page you were looking for doesn't exist.
+  </p>
+  <a href="{{ session.get('landing_page', '/') }}" aria-label="A link to macroBLASTER's home page" class="button-404">
+    Take me home
+  </a>
+</main>
+
+{% endblock %}

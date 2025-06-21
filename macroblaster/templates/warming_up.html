@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% block title %}
+   | A free introductory guide to warming up for exercise
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/warming_up">
+   <meta property="og:description" content="macroBLASTER's free introductory guide to warming up.">
+{% endblock %}
+
+{% block content %}
+
+<article>
+   <button class="share_button" data-page="warm" id="shareWarmup" aria-label="Share page information">
+      <i class="fas fa-share-alt"></i>
+      Share
+   </button>
+      <br>
+      <br>
+      {% if variant == 'A' %}
+         <h2>
+            Stretch Your Limits: Dynamic Warmups That Actually Work
+         </h2> 
+      {% else %}
+         <h2>
+            Warming Up
+         </h2>
+      {% endif %}
+            <p>
+               Warming up before exercise is essential for preparing your body for physical activity. 
+               It helps increase blood flow to your muscles, raise your body temperature, and mentally 
+               prepare you for the workout ahead. A proper warm-up can reduce the risk of injury and 
+               improve your performance. Here's a guide to an effective warm-up:
+            </p>
+               <ol class="guide">
+                  <li>
+                     <b>
+                        Start with Light Aerobic Activity:
+                     </b> 
+                        Begin with 5-10 minutes of low-intensity 
+                        <a href="{{ url_for('main.aerobic_exercise') }}" aria-label="A link to macroBLASTER's Aerobics page">aerobic exercise</a>. 
+                        This can include brisk walking, jogging in place, cycling at an easy pace, or jumping jacks. 
+                        The goal is to increase your heart rate gradually.
+                  </li>
+                  <li>
+                     <b>
+                        Dynamic Stretches:
+                     </b> 
+                        After your light aerobic warm-up, perform dynamic stretches. These are stretches that involve movement 
+                        and mimic the motions you'll use in your workout. Some examples include:
+                  </li>
+                     <ul>
+                        <li>
+                           <b>
+                              Leg swings
+                           </b>
+                              - Stand upright and swing one leg forward and backward, then side to side.
+                           </li>
+                           <li>
+                              <b>
+                                 Arm circles
+                              </b>
+                                 - Extend your arms and make circular motions with them.
+                           </li>
+                           <li>
+                              <b>
+                                 Hip circles
+                              </b>
+                                 - Rotate your hips in a circular motion.
+                           </li>
+                           <li>
+                              <b>
+                                 Shoulder rolls
+                              </b>
+                                 - Roll your shoulders forward and backward.
+                           </li>
+                     </ul>
+                  <li>
+                     <b>
+                        Sport-Specific Movements:
+                     </b> 
+                        If you're engaging in a specific sport or activity, include movements that mimic the actions 
+                        involved in that activity. For example, if you're <a href="{{ url_for('main.resistance_training') }}" aria-label="A link to macroBLASTER's Resistance Training page">resistance training</a>, 
+                        start with light, controlled repetitions of the exercises you plan to do in your workout.
+                  </li>
+                  <li>
+                     <b>
+                        Gradual Progression:
+                     </b> 
+                        Your warm-up should gradually increase in intensity. Start with easy movements and progress to 
+                        slightly more challenging ones. The goal is to raise your heart rate and warm up your muscles 
+                        without overexertion.
+                  </li>
+                  <li>
+                     <b>
+                        Listen to Your Body:
+                     </b> 
+                        Pay attention to how your body feels during the warm-up. It's an opportunity to assess if you have 
+                        any tightness or discomfort that may need additional attention before you start your workout.
+                  </li>
+                  <li>
+                     <b>
+                        Stay Hydrated:
+                     </b> 
+                        Drink water before and during your warm-up to ensure you're adequately hydrated.
+                  </li>
+                  <li>
+                     <b>
+                        Mental Preparation:
+                     </b> 
+                        Use the warm-up time to mentally prepare for your workout. Focus on your goals and the exercises you plan to do.
+                  </li>
+                  <li>
+                     <b>
+                        Adapt to Your Workout:
+                     </b> 
+                        The duration and intensity of your warm-up can vary depending on the intensity of your workout. For more intense 
+                        workouts or if you're engaging in cold weather exercise, you might need a longer warm-up.
+                  </li>
+               </ol>
+                  <p class="important">
+                     ** Warming up is a crucial part of your exercise routine, whether you're doing aerobic exercise, 
+                     strength training, or any other physical activity. It prepares your body and reduces the risk of injury, 
+                     helping you get the most out of your workout while keeping you safe **
+                  </p>
+</article>
+ 
+{% endblock %}

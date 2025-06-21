@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+    {% block meta %}
+        <meta charset="utf-8">
+            <title>macroBLASTER{% block title %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Discover what your calorie intake should be; learn to target recommended macronutrient goals; get fit with macroBLASTER's free guides and online tool.">
+        <meta name="keywords" content="macros, macroblaster, macronutrients, healthy, lifestyle, exercise, fitness, BMI, BMR, free online calculator">
+            <meta property="og:title" content="Blast your macros and get fit!">
+            <meta property="og:image" content="https://www.macroblaster.online/static/images/macroblaster_logo.png">
+            <meta property="og:site_name" content="macroBLASTER">
+            <meta property="og:locale" content="en_GB">
+            <meta property="og:image:type" content="image/png">
+            <meta property="og:type" content="website">
+            <meta name="twitter:title" content="macroBLASTER">
+            <meta name="twitter:description" content="Blast your macros and get fit!">
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:image" content="https://www.macroblaster.online/static/images/macroblaster_logo.png">
+            <meta name="twitter:image:alt" content="macroBLASTER">
+            <meta name="twitter:site" content="@macroBLASTER">
+                <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+                <link rel="shortcut icon" href="{{ url_for('static', filename='icons/favicon.ico') }}" type="image/x-icon">
+                <link rel="apple-touch-icon" href="{{ url_for('static', filename='icons/apple-touch-icon.png') }}">
+                <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='icons/apple-touch-icon-57x57.png') }}">
+                <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='icons/apple-touch-icon-72x72.png') }}">
+                <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='icons/apple-touch-icon-76x76.png') }}">
+                <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='icons/apple-touch-icon-114x114.png') }}">
+                <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='icons/apple-touch-icon-120x120.png') }}">
+                <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='icons/apple-touch-icon-144x144.png') }}">
+                <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='icons/apple-touch-icon-152x152.png') }}">
+                <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/apple-touch-icon-180x180.png') }}">
+    {% endblock %}
+
+    {% block extra_meta %}
+    {% endblock %}
+
+    {% block corecss %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    {% endblock %}
+
+    {% block extra_css %}
+    {% endblock %}
+
+        <script src="https://kit.fontawesome.com/04887afb98.js" crossorigin="anonymous"></script>
+
+    {% block extra_js %}
+    {% endblock %}
+</head>
+<body class="inter-text">
+    <header>
+        <div id="menuButton" class="menuButton">
+            <div class="top_line"></div>
+            <div class="bottom_line"></div>
+        </div>
+        <a href="{{ url_for('main.guides') }}" class="blog" aria-label="A link to macroBLASTER's health and wellness guides">
+            Guides
+        </a>
+            <a href="{{ session.get('landing_page', '/') }}" aria-label="A link to macroBLASTER's free online tool">
+                <h1 class="do-hyeon-regular">
+                    <sub>macro</sub><span>BLASTER</span>
+                </h1>
+            </a>
+                <h2>
+                    Helping you find your fit
+                </h2>
+    </header>
+
+    <nav id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closeButton">
+            &times;
+        </a>
+        <a href="{{ session.get('landing_page', '/') }}" aria-label="A link to macroBLASTER's free online tool">
+            <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span>
+        </a>
+            <h3>
+                More Fitness
+            </h3>
+                <a href="{{ url_for('main.what_are_macros') }}" aria-label="A link to macroBLASTER's introductory guide to macros">
+                    What are Macros?
+                </a>
+                <a href="{{ url_for('main.warming_up') }}" aria-label="A link to macroBLASTER's introductory guide to warming up">
+                    Warming Up
+                </a>
+                <a href="{{ url_for('main.aerobic_exercise') }}" aria-label="A link to macroBLASTER's introductory guide to aerobic exercise">
+                    Aerobic Exercise
+                </a>
+                <a href="{{ url_for('main.resistance_training') }}" aria-label="A link to macroBLASTER's introductory guide to resistance training">
+                    Resistance Training
+                </a>
+                <a href="{{ url_for('main.injury_recovery') }}" aria-label="A link to macroBLASTER's introductory guide to injury recovery">
+                    Injury Recovery
+                </a>
+                <a href="{{ url_for('main.guides') }}" class="blog" aria-label="A link to macroBLASTER's health and wellness guides">
+                    All Guides
+                </a>
+                <a href="{{ url_for('main.wellness_directory') }}" aria-label="A link to macroBLASTER's wellness directory">
+                    Wellness Directory
+                </a>
+            <h3>
+                Company Information
+            </h3>
+                <a href="{{ url_for('main.faqs') }}" aria-label="A link to macroBLASTER's FAQ page">
+                    FAQs
+                </a>
+                <a href="{{ url_for('main.jobs_board') }}" aria-label="A link to macroBLASTER's jobs board">
+                    Jobs Board
+                </a>
+                <a href="{{ url_for('main.press_releases') }}" aria-label="A link to macroBLASTER's press release page">
+                    Press Releases
+                </a>
+                <a href="{{ url_for('main.user_agreement') }}" aria-label="A link to macroBLASTER's User Agreement page">
+                    User Agreement
+                </a>
+                <a href="{{ url_for('main.privacy_policy') }}" aria-label="A link to macroBLASTER's Privacy Statement page">
+                    Privacy Statement
+                </a>
+                <br>
+                <a href="#" aria-label="A link to find your nearest gym on Google Maps" id="openMapsMenuButton">
+                    Find A Gym
+                </a>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    {% if not (cookie_accepted or cookie_rejected) and not message_viewed_closed %}
+    <div class="cookie-alert">
+      <br>
+      <span class="do-hyeon-regular">macro<span class="blaster">BLASTER</span></span> uses cookies to ensure you get the best experience on our website.
+        <br>
+        <br>
+        <br>
+        <a href="{{ url_for('cooks.accept_cookies') }}" class="accept show">Accept All</a>
+        <a href="{{ url_for('cooks.reject_cookies') }}" class="reject">Essential Only</a>
+        <br>
+        <br>
+        <br>
+          Want to know more? View our <a href="{{ url_for('main.privacy_policy') }}#cookies">Cookie Policy</a>.
+        <br>
+        <br>
+        <br>
+    </div>
+    {% endif %}
+    {% if cookie_accepted and not message_viewed_closed %}
+    <div class="cookie-alert">
+      <br>
+        You have accepted all cookies. You can change this setting <a href="{{ url_for('main.privacy_policy') }}#update">here</a>.
+        <br>
+        <br>
+        <br>
+        <button class="hide">Close Message</button>
+        <br>
+        <br>
+        <br>
+    </div>
+    {% endif %}
+    {% if cookie_rejected and not message_viewed_closed %}
+    <div class="cookie-alert">
+      <br>
+        You have accepted essential cookies only. You can change this setting <a href="{{ url_for('main.privacy') }}#update">here</a>.
+        <br>
+        <br>
+        <br>
+        <button class="hide">Close Message</button>
+        <br>
+        <br>
+        <br>
+    </div>
+    {% endif %}
+    {% if (cookie_accepted or cookie_rejected) and message_viewed_closed %}
+    {% endif %}
+
+    <footer>
+        <div class="footer_r-container">
+            <div class="footer_left">
+                <div class="footer_container">
+                    <h3>
+                        More Fitness
+                    </h3>
+                        <br>
+                            <ul>
+                                <li>
+                                    <a href="{{ url_for('main.what_are_macros') }}" aria-label="A link to macroBLASTER's introductory guide to macros">
+                                        What are Macros?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('main.warming_up') }}" aria-label="A link to macroBLASTER's introductory guide to warming up">
+                                        Warming Up
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('main.aerobic_exercise') }}" aria-label="A link to macroBLASTER's introductory guide to aerobic exercise">
+                                        Aerobic Exercise
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('main.resistance_training') }}" aria-label="A link to macroBLASTER's introductory guide to resistance training">
+                                        Resistance Training
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('main.injury_recovery') }}" aria-label="A link to macroBLASTER's introductory guide to injury recovery">
+                                        Injury Recovery
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('main.guides') }}" class="blog" aria-label="A link to macroBLASTER's health and wellness guides">
+                                        All Guides
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('main.wellness_directory') }}" aria-label="A link to macroBLASTER's wellness directory">
+                                        Wellness Directory
+                                    </a>
+                                </li>
+                            </ul>
+                </div>
+            </div>
+            <div class="footer_middle">
+                        <button id="openMapsButton" class="find_gym" aria-label="A link to find your nearest gym on Google Maps">
+                            Find A Gym
+                        </button>
+                            <p>
+                                <i>
+                                    Add me to your favourites or homescreen!
+                                </i>
+                            </p>
+            </div>
+            <div class="footer_right">
+                <div class="footer_container">
+                    <h3>
+                        Company Information
+                    </h3>
+                        <br>
+                            <ul>
+                                <li>
+                                    <a href="{{ url_for('main.faqs') }}" aria-label="A link to macroBLASTER's FAQ page">
+                                        FAQs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('main.jobs_board') }}" aria-label="A link to macroBLASTER's jobs board">
+                                        Jobs Board
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('main.press_releases') }}" aria-label="A link to macroBLASTER's press release page">
+                                        Press Releases
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('main.user_agreement') }}" aria-label="A link to macroBLASTER's User Agreement page">
+                                        User Agreement
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url_for('main.privacy_policy') }}" aria-label="A link to macroBLASTER's Privacy Statement page">
+                                        Privacy Statement
+                                    </a>
+                                </li>
+                            </ul>
+                </div>     
+            </div>
+        </div>
+            <hr>
+                <p>
+                    <a class="dashboard" href="{{ url_for('admin.dashboard') }}" aria-label="Dashboard">-----DB-----</a>&#169; {{ current_year }} <span class="do-hyeon-regular footer_logo"><sub>macro</sub><span class="footer_blaster">BLASTER</span></span>. All Rights Reserved.<span class="up_arrow" id="toTop">&#8682;</span>
+                </p>
+    </footer>
+        <script src="{{ url_for('static', filename='js/alert_box.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/side_menu.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/share_page.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/conversion_log.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/heading_conversion.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/location.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/to_top.js') }}"></script>
+        {% if request.path == url_for('main.index') %}
+            <script src="{{ url_for('static', filename='js/search_boxes.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/all_input_output.js') }}"></script>
+        {% endif %}
+        {% if request.path == url_for('main.index_b') %}
+            <script src="{{ url_for('static', filename='js/search_boxes_b.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/all_input_output_b.js') }}"></script>
+        {% endif %}
+        {% if request.path == url_for('main.privacy_policy') %}
+            <script src="{{ url_for('static', filename='js/cookie_preference.js') }}"></script>
+        {% endif %}
+        {% if request.path == url_for('admin.dashboard') %}
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+        {% endif %}
+</body>
+</html>

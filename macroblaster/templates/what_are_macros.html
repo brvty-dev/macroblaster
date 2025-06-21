@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block title %}
+   | A free introductory guide to macronutrients
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/what_are_macros">
+   <meta property="og:description" content="macroBLASTER's free introductory guide to macronutrients.">
+{% endblock %}
+
+{% block content %}
+
+<article>
+   <button class="share_button" data-page="macros" id="shareMacros" aria-label="Share page information">
+      <i class="fas fa-share-alt"></i>
+      Share
+   </button>
+      <br>
+      <br>
+         {% if variant == 'A' %}
+            <h2>
+               Use these 7 simple macronutrient facts to get a healthy diet
+            </h2> 
+         {% else %}
+            <h2>
+               Master Your Macros: Fueling Fat Loss and Muscle Growth
+            </h2>
+         {% endif %}
+            <p>
+               Macros, short for macronutrients, are the essential nutrients that provide the body with energy and are 
+               required for proper functioning. The three primary macronutrients are:
+            </p>
+               <ul>
+                  <li>
+                     <b>
+                        Carbohydrates:
+                     </b> 
+                        Carbs are the body's primary source of energy. They are broken down into glucose (sugar) and used for 
+                        immediate energy or stored as glycogen in the muscles and liver for later use. Carbs are found in foods 
+                        like grains, fruits, vegetables, and legumes.
+                  </li>
+                     <br>
+                  <li>
+                     <b>
+                        Proteins:
+                     </b> 
+                        Proteins are essential for building and repairing tissues, making enzymes and hormones, and supporting the 
+                        immune system. They are composed of amino acids, which are the building blocks of protein. Foods rich in protein 
+                        include meat, poultry, fish, eggs, dairy, legumes, and tofu.
+                  </li>
+                     <br>
+                  <li>
+                     <b>
+                        Fats:
+                     </b> 
+                        Fats also provide energy and are crucial for various bodily functions, including nutrient absorption, cell 
+                        structure, and hormone production. Healthy fats are found in foods like nuts, seeds, avocados, olive oil, 
+                        and fatty fish.
+                  </li>
+               </ul>
+            <p>
+               Why Macros Are Important in Health and Fitness:
+            </p>
+            <ol class="guide">
+               <li>
+                  <b>
+                     Energy Source:
+                  </b> 
+                     Carbohydrates are the body's primary and most immediate energy source. Adequate carbohydrate intake is crucial 
+                     for physical performance, especially during high-intensity workouts.
+               </li>
+               <li>
+                  <b>
+                     Muscle Growth and Repair:
+                  </b> 
+                     Protein is essential for building and repairing muscle tissues. Athletes and individuals engaging in 
+                     <a href="{{ url_for('main.resistance_training') }}" aria-label="A link to macroBLASTER's Resistance Training page">resistance training</a> 
+                     often require higher protein intake to support muscle growth and recovery.
+               </li>
+               <li>
+                  <b>
+                     Nutrient Balance:
+                  </b> 
+                     Consuming a balanced ratio of macros ensures that you receive a wide range of nutrients necessary for <span class="important">overall health 
+                     and well-being</span>.
+               </li>
+               <li>
+                  <b>
+                     Body Composition:
+                  </b> 
+                     Macros play a significant role in body composition. Manipulating macronutrient intake (e.g., adjusting the ratio of 
+                     carbs, proteins, and fats) can be used to support specific fitness goals, such as weight loss, muscle gain, or maintenance.
+               </li>
+               <li>
+                  <b>
+                     Hunger and Satiety:
+                  </b> 
+                     Different macros affect hunger and satiety differently. For example, protein and fiber-rich foods tend to keep you feeling 
+                     full for longer, which can be useful for managing appetite and controlling calorie intake.
+               </li>
+               <li>
+                  <b>
+                     Performance Optimization:
+                  </b> 
+                     Proper macronutrient intake can optimize athletic performance and recovery. Athletes and active individuals often tailor 
+                     their macronutrient intake to match their training and competition demands.
+               </li>
+               <li>
+                  <b>
+                     Metabolic Health:
+                  </b> 
+                     Macros can impact metabolic health. For example, high consumption of simple carbohydrates may 
+                     lead to blood sugar spikes and insulin resistance, while a balanced intake of carbs, proteins, and healthy fats can help 
+                     stabilize blood sugar levels.
+               </li>
+            </ol>
+               <p class="important">
+                  An individual's macronutrient need varies based on factors like age, gender, activity level, and fitness goals.
+               </p>
+               <p class="italic">
+                  Consulting with a registered dietitian or nutritionist can help tailor your macronutrient intake to your specific 
+                  needs and goals.You can find an 
+                  <a href="{{ url_for('main.wellness_directory') }}" aria-label="A link to macroBLASTER's wellness directory">nutrition expert</a> here.
+               </p>
+</article>
+
+{% endblock %}

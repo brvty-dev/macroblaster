@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block title %}
+   | A free online tool to help determine daily macronutrient goals for your lifestyle
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online">
+   <meta property="og:description" content="A free online tool to calculate your daily macronutrient intake.">
+{% endblock %}
+
+{% block content %}
+
+<main class="b" id="resultsB">
+   <button class="share_button" data-page="index_b" id="shareMacroBlasterB" aria-label="Share Macro Blaster">
+      <i class="fas fa-share-alt"></i>
+      Share
+   </button>
+   <br>
+      <h2>
+         Calculate your macros here ...
+      </h2>
+         <form id="macro-form">
+            <p>
+               ARE YOU ...
+            </p>
+               <button class="gender_button_b" id="maleB">
+                        &nbsp;&nbsp;MALE&nbsp;&nbsp;
+               </button>
+               <button class="gender_button_b" id="femaleB">
+                     FEMALE
+               </button>
+            <p>
+               DO YOU WANT TO ...
+            </p>
+               <button class="goal_button_b" id="cutB">
+                        &nbsp;&nbsp;LOSE WEIGHT&nbsp;&nbsp;
+               </button>
+               <button class="goal_button_b" id="maintainB">
+                        STAY THE SAME
+               </button>
+               <button class="goal_button_b" id="bulkB">
+                        &nbsp;BUILD MUSCLE&nbsp;
+               </button>
+            <p>
+               PLEASE ENTER YOUR ...
+            </p>
+               <div class="select_box_b">
+                  <label for="age">
+                     AGE
+                  </label>
+                     <br>
+                        <select id="ageB" name="age">
+                           <option value="">Select</option>
+                        </select>
+               </div>
+               <div class="select_box_b">
+                  <label for="height">HEIGHT</label>
+                     <br>
+                        <select id="heightB" name="height">
+                           <option value="">Select</option>
+                        </select>
+               </div>
+               <div class="select_box_b">
+                  <label for="weight">
+                     WEIGHT
+                  </label>
+                     <br>
+                        <select id="weightB" name="weight">
+                           <option value="">Select</option>
+                        </select>
+               </div>
+            <p>
+               WHAT IS YOUR EXERCISE LEVEL ...
+            </p>
+               <button class="activity_button_b" id="noneB">
+                     NONE<br>Little<br>to no<br>&nbsp;exercise&nbsp;
+               </button>
+               <button class="activity_button_b" id="lightB">
+                     LIGHT<br>&nbsp;1-3 days&nbsp;<br>per<br>week
+               </button>
+               <button class="activity_button_b" id="mediumB">
+                     MEDIUM<br>&nbsp;3-5 days&nbsp;<br>per<br>week
+               </button>
+               <button class="activity_button_b" id="highB">
+                     HIGH<br>&nbsp;6-7 days&nbsp;<br>per<br>week
+               </button>
+               <button class="activity_button_b" id="extremeB">
+                     EXTREME<br>Exercise<br>and<br>active job
+               </button>
+                  <br>
+                     <input class="b" type="submit" id="submitB" value="GET macros">
+         </form>
+</main>
+  
+{% endblock %}

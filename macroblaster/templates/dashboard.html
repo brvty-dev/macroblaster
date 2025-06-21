@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}
+   | Dashboard
+{% endblock %}
+
+{% block extra_meta %}
+   <meta property="og:url" content="https://www.macroblaster.online/">
+   <meta property="og:description" content="A free online tool to calculate your daily macronutrient intake.">
+   <meta name="robots" content="noindex, nofollow">
+{% endblock %}
+
+{% block content %}
+
+<h2>AB Test Dashboard</h2>
+   <br>
+      <canvas id="combinedChart" width="600" height="300"></canvas>
+         <br>
+            {% for page, info in variants.items() %}
+               <canvas id="chart_{{ page }}" width="600" height="300"></canvas>
+                  <br>
+            {% endfor %}
+               <a href="/export.csv">&#128229; Download Report</a>
+                  <br>
+                  <br>
+                     <form action="{{ url_for('admin.logout') }}" method="POST">
+                        <button class="logout" type="submit">
+                           Logout
+                        </button>
+                     </form>
+                        <script id="chart-data" type="application/json">
+                           {{ data|tojson }}
+                        </script>
+                        <script id="variant-data" type="application/json">
+                           {{ variants|tojson }}
+                        </script>
+
+{% endblock %}
